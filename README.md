@@ -2,14 +2,13 @@
 
 **English**: [README.en.md](README.en.md) | **中文**: [README.md](README.md)
 
-> **本仓库是基于 [Derpyu520/qq-bridge](https://github.com/Derpyu520/qq-bridge) `v0.2.1-r1`**
-> **的二次开发版**（本地记忆系统、契阔、情绪层、目的引擎等），不是原项目。
-> 上游文档与安全承诺仍以上游仓库为准。
->
-> 主要新增：**19 个模块 / 约 1.9 万行代码**，含 SQLite 记忆检索、契阔书信、PAD 情绪、
-> 中文时间解析、目的引擎、对话收尾。改动明细见 [LOCAL-NOTES.md](LOCAL-NOTES.md)，
-> 参考项目来源见 [ATTRIBUTION.md](ATTRIBUTION.md)。
+> **本仓库版本 `v0.2.1-r1-local.1`** —— 基于 [Derpyu520/qq-bridge](https://github.com/Derpyu520/qq-bridge)
+> `v0.2.1-r1` 的二次开发版（DSH 0.2.1-rc.2 适配），不是原项目。
+> 上游文档与安全承诺仍以上游仓库为准；来源与授权见 [ATTRIBUTION.md](ATTRIBUTION.md)。
 
+> 本仓库在上游基础上**新增 19 个模块、约 1.9 万行代码**，核心是给这套 QQ 桥接补上
+> **长期记忆与人格连续性**：SQLite 冷存储与检索、契阔书信、PAD 情绪层、目的引擎、对话收尾。
+> 详见下方 [新增功能](#新增功能) 与 [LOCAL-NOTES.md](LOCAL-NOTES.md)。
 
 > 🗂️ 文档索引（全部文档一句话说明 + 是否仍然有效）见 **[docs/README.md](docs/README.md)**；仓库目录/脚本命名约定见 **[docs/FOLDER_MAP.md](docs/FOLDER_MAP.md)**。
 >
@@ -19,7 +18,36 @@
 
 把 QQ 消息接入 DSH agent：QQ 好友/群发来的消息会变成 DSH 会话里的用户消息，agent 的回复（含提问、工具审批）会发回 QQ。
 
-> ⚠️ **当前版本 `v0.2.1-r1`，适配 DSH 0.2.1-rc.2**（0.2.0-rc.2 亦兼容；两个版本上都逐项实测：`npm run verify:adaptation`）。
+## 新增功能
+
+| 新功能 | 一句话 | 模块 |
+| --- | --- | --- |
+| **长期记忆冷存储** | 每条对话落 SQLite，与 DSH 上下文完全解耦；上下文被压缩也不影响检索 | `archive-store` |
+| **FTS5 检索召回** | 唤醒时按当前话题从历史里搜回 1-2 条旧对话，像"突然想起来"而不是"查库" | `recall` |
+| **话题标签扩散** | 给消息打话题标签，命中后按共同话题带回相邻的旧事（图谱的极简版） | `topic-tags` |
+| **重要性估算** | 按情绪强度给消息打 0.35~0.85 的初始权重，供检索排序 | `importance-estimate` |
+| **五级遗忘维护** | 每日衰减 / 归档 / 清理；启动时补跑，成功才记账、幂等不重复衰减 | `decay-memory` |
+| **每日冷备** | 每日一份一致性快照（VACUUM INTO），轮转保留 7 份日备 | `archive-backup` |
+| **契阔书信** | 每天一封写给自己的信，最近 5 封全文注入；只增不改、旧版可查 | `covenant-store` |
+| **要记牢 + 可核对** | 她自己标的事按"标过几天"加权；每件要求说清"怎么算应验" | `covenant-facts` |
+| **切断实验** | 退役不删：要写"为什么切"和"预测切完什么该还在"，事后回访塌没塌 | `covenant-store` |
+| **契阔注入与脱敏** | 唯一实现（bridge 与预览共用）；只压"最近 N 封"，标记段整段保留 | `covenant-inject` |
+| **PAD 情绪层** | 三维愉悦/唤醒/掌控 + 12 条情绪规则 + 时间衰减，让她"此刻有心情" | `emotion-pad` |
+| **中文时间解析** | 「上周三」「三天前」→ 精确日期区间，检索按时间窗过滤 | `when-cn` |
+| **目的引擎** | 5 维需求向量 + 未闭合的事 + 熟悉度降权，回答"她为什么此刻想说话" | `intent-engine` |
+| **对话收尾** | 区分"回"与"这段聊完了"；收尾不压被别人叫醒 | `closure-engine` |
+| **B 站视频画面** | 用官方故事板接口取画面帧 + 弹幕，不下载视频、不跑 ffmpeg | `bili-storyboard` |
+| **看门狗** | 探测桥接、判断该不该动手、动手时开新窗口拉起 | `bridge-watchdog` |
+| **state/ ACL 收紧** | 本机 state 目录权限加固的唯一实现 | `state-acl` |
+
+> 完整改动记录与设计取舍（含 21 个回归套件、 踩过的坑）见 [LOCAL-NOTES.md](LOCAL-NOTES.md)。
+> 参考项目与归属见 [ATTRIBUTION.md](ATTRIBUTION.md)。
+
+> ⚠️ **以下为上游文档（原样保留）**。其中「当前版本」指**上游** `v0.2.1-r1`；
+> **本仓库版本为 `v0.2.1-r1-local.1`**，直接承接上游该版本，未合入其后新改动。
+> 下文所有 tag 链接均指**上游发布**：[上游 Releases](https://github.com/Derpyu520/qq-bridge/releases)。
+>
+> 上游 `v0.2.1-r1`，适配 DSH 0.2.1-rc.2**（0.2.0-rc.2 亦兼容；两个版本上都逐项实测：`npm run verify:adaptation`）。
 > 鉴权用 `~/.dsh` 里持久化的浏览器会话签名密钥**离线铸造 Cookie** —— DSH 0.1.7 起进程启动 token
 > 只存在于内存、不再落盘，旧版「从 guard 日志里读 token」的方式已失效。agent preset 是 DSH 0.1.7 起的
 > `@deepseek-ai/dsh-agent-preset` Cordis 行（`~/.dsh/.agent-presets/` 目录机制已废）。协议代次
