@@ -1,6 +1,6 @@
 {
   "name": "qq-bridge",
-  "version": "0.2.1-r1-local.1",
+  "version": "0.1.0",
   "private": true,
   "license": "MIT",
   "description": "QQ ↔ DSH 桥接的二次开发版：记忆系统、契阔书信、PAD 情绪层、目的引擎",

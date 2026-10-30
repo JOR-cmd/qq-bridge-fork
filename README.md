@@ -2,8 +2,8 @@
 
 **English**: [README.en.md](README.en.md) | **中文**: [README.md](README.md)
 
-> **本仓库版本 `v0.2.1-r1-local.1`** —— 基于 [Derpyu520/qq-bridge](https://github.com/Derpyu520/qq-bridge)
-> `v0.2.1-r1` 的二次开发版（DSH 0.2.1-rc.2 适配），不是原项目。
+> **本仓库版本 `v0.1.0`** —— 基于 [Derpyu520/qq-bridge](https://github.com/Derpyu520/qq-bridge)
+> `v0.2.1-r1` 的二次开发版，**适配 DSH 0.2.1-rc.2**，不是原项目。
 > 上游文档与安全承诺仍以上游仓库为准；来源与授权见 [ATTRIBUTION.md](ATTRIBUTION.md)。
 
 > 本仓库在上游基础上**新增 19 个模块、约 1.9 万行代码**，核心是给这套 QQ 桥接补上
@@ -44,7 +44,7 @@
 > 参考项目与归属见 [ATTRIBUTION.md](ATTRIBUTION.md)。
 
 > ⚠️ **以下为上游文档（原样保留）**。其中「当前版本」指**上游** `v0.2.1-r1`；
-> **本仓库版本为 `v0.2.1-r1-local.1`**，直接承接上游该版本，未合入其后新改动。
+> **本仓库版本为 `v0.1.0`**，直接承接上游该版本，未合入其后新改动。
 > 下文所有 tag 链接均指**上游发布**：[上游 Releases](https://github.com/Derpyu520/qq-bridge/releases)。
 >
 > 上游 `v0.2.1-r1`，适配 DSH 0.2.1-rc.2**（0.2.0-rc.2 亦兼容；两个版本上都逐项实测：`npm run verify:adaptation`）。
