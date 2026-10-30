@@ -2,26 +2,13 @@
 
 **English**: [README.en.md](README.en.md) | **中文**: [README.md](README.md)
 
-> ## ⚠️ 本仓库是 fork，不是上游
-
-> 本仓库基于 **[Derpyu520/qq-bridge](https://github.com/Derpyu520/qq-bridge)** 的
-> `v0.2.1-r1`（适配 DSH 0.2.1-rc.2）进行**本地化修改**，不是原项目，也不代表上游立场。
+> **本仓库是基于 [Derpyu520/qq-bridge](https://github.com/Derpyu520/qq-bridge) `v0.2.1-r1`**
+> **的二次开发版**（本地记忆系统、契阔、情绪层、目的引擎等），不是原项目。
+> 上游文档与安全承诺仍以上游仓库为准。
 >
-> **上游文档、安装步骤、安全承诺仍以上游仓库为准**（本仓库的 `README.md` / `RULES.md` 保留原文）。
-> 本仓库新增的改动集中在记忆系统、契阔、情绪层、目的引擎等模块，
-> 详见提交说明与 `LOCAL-NOTES.md`。
->
-> 已按上游 MIT 许可保留 `LICENSE` 与版权声明。
-> 本仓库已做**脱敏处理**：不含真实 QQ 号、本机路径、人格卡与凭据。
-
-> ### 关于 AI 辅助
->
-> 本仓库的本地化修改在 **AI 辅助**下完成（DeepSeek Harness agent）。
-> 修改内容、判断与取舍由仓库所有者审定。
->
-> 上游项目全部代码与文档的著作权归 **Derpyu520 及 qq-bridge / QSH 贡献者**，
-> 依其 `LICENSE`（MIT）授权使用。本仓库保留原版权声明，未作任何删除或替换。
-> 参考项目与归属明细见 **[ATTRIBUTION.md](ATTRIBUTION.md)**（memory-brain / dsh-remembers / surfcore / dsh-world / dsh-retcon / silicon / Graphiti）。
+> 主要新增：**19 个模块 / 约 1.9 万行代码**，含 SQLite 记忆检索、契阔书信、PAD 情绪、
+> 中文时间解析、目的引擎、对话收尾。改动明细见 [LOCAL-NOTES.md](LOCAL-NOTES.md)，
+> 参考项目来源见 [ATTRIBUTION.md](ATTRIBUTION.md)。
 
 
 > 🗂️ 文档索引（全部文档一句话说明 + 是否仍然有效）见 **[docs/README.md](docs/README.md)**；仓库目录/脚本命名约定见 **[docs/FOLDER_MAP.md](docs/FOLDER_MAP.md)**。
@@ -388,3 +375,16 @@ SnowLuma 同一个账号的 **HTTP token（默认 3000 端口）与 WebSocket to
 ## 合规提醒
 
 SnowLuma 是独立第三方项目，与腾讯/QQ 无隶属关系，仅供学习与技术研究；使用前请阅读其 EULA 与《QQ 用户协议》。
+
+---
+
+## 关于 AI 辅助与许可
+
+本仓库的本地化开发在 **AI 辅助**下完成（DeepSeek Harness agent），
+修改内容、判断与取舍由仓库所有者审定。
+
+上游项目全部代码与文档的著作权归 **Derpyu520 及 qq-bridge / QSH 贡献者**，
+依其 `LICENSE`（MIT）授权使用。
+本仓库保留原版权声明，未作任何删除或替换。
+参考项目（memory-brain / dsh-remembers / surfcore / dsh-world / dsh-retcon / silicon / Graphiti）
+的参考范围见 [ATTRIBUTION.md](ATTRIBUTION.md)。
