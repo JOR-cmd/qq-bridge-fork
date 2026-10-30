@@ -1,0 +1,421 @@
+{
+  "baseVersion": "0.2.1-r1",
+  "savedAt": "2026-10-30T13:33:39.502Z",
+  "files": [
+    {
+      "path": "src/bridge.js",
+      "bytes": 772285,
+      "sha256": "cbfe3b0ee8dfbd15"
+    },
+    {
+      "path": "src/recall.mjs",
+      "bytes": 15046,
+      "sha256": "5a1845607f705d85"
+    },
+    {
+      "path": "src/when-cn.mjs",
+      "bytes": 5518,
+      "sha256": "84cb3569b7525d21"
+    },
+    {
+      "path": "test-when-cn.mjs",
+      "bytes": 4852,
+      "sha256": "2a69a5df94b609b4"
+    },
+    {
+      "path": "test-recall-strip.mjs",
+      "bytes": 2529,
+      "sha256": "c1010c2ab64c6d5a"
+    },
+    {
+      "path": "src/emotion-pad.mjs",
+      "bytes": 11848,
+      "sha256": "ed79993c1e2d149e"
+    },
+    {
+      "path": "test-emotion-pad.mjs",
+      "bytes": 7855,
+      "sha256": "305929ec086ef206"
+    },
+    {
+      "path": "src/topic-tags.mjs",
+      "bytes": 5224,
+      "sha256": "54f14b51ebd6f656"
+    },
+    {
+      "path": "test-tokenize.mjs",
+      "bytes": 3358,
+      "sha256": "e626223919605c48"
+    },
+    {
+      "path": "test-topic-tags.mjs",
+      "bytes": 5034,
+      "sha256": "fd47d721e4ec6623"
+    },
+    {
+      "path": "scripts/backfill-importance.mjs",
+      "bytes": 2854,
+      "sha256": "721c815b329e7b2f"
+    },
+    {
+      "path": "scripts/backfill-tags.mjs",
+      "bytes": 2353,
+      "sha256": "6fc0b222db22397c"
+    },
+    {
+      "path": "scripts/measure-retrieval-gap.mjs",
+      "bytes": 7157,
+      "sha256": "fad71666c3e5606b"
+    },
+    {
+      "path": "scripts/analyze-graph-value.mjs",
+      "bytes": 4637,
+      "sha256": "c4cf28238ef22493"
+    },
+    {
+      "path": "scripts/analyze-vector-value.mjs",
+      "bytes": 2470,
+      "sha256": "62d2c5ac893ef8cf"
+    },
+    {
+      "path": "scripts/analyze-threshold.mjs",
+      "bytes": 2643,
+      "sha256": "ff19077e6dd2a461"
+    },
+    {
+      "path": "scripts/verify-tokenization-fix.mjs",
+      "bytes": 2661,
+      "sha256": "e9ece936b3b9dcd7"
+    },
+    {
+      "path": "scripts/verify-deployment.mjs",
+      "bytes": 2466,
+      "sha256": "19cc54215cea232e"
+    },
+    {
+      "path": "src/importance-estimate.mjs",
+      "bytes": 2689,
+      "sha256": "d3b970fc422d472c"
+    },
+    {
+      "path": "scripts/check-topic-tags-quality.mjs",
+      "bytes": 3647,
+      "sha256": "d5d65a7d4e3afc6e"
+    },
+    {
+      "path": "scripts/migrate-memory-fields.mjs",
+      "bytes": 5625,
+      "sha256": "a3bb5c5bcff45dfd"
+    },
+    {
+      "path": "scripts/decay-memory.mjs",
+      "bytes": 15341,
+      "sha256": "c450922ecef2f2ff"
+    },
+    {
+      "path": "scripts/verify-maintenance-refs.mjs",
+      "bytes": 3605,
+      "sha256": "ed1e867341c51719"
+    },
+    {
+      "path": "scripts/verify-bridge-loads.mjs",
+      "bytes": 2180,
+      "sha256": "710c3b6c98d27b7b"
+    },
+    {
+      "path": "scripts/verify-pad-rules.mjs",
+      "bytes": 3760,
+      "sha256": "6bba33c893830730"
+    },
+    {
+      "path": "scripts/verify-pad-local.mjs",
+      "bytes": 4087,
+      "sha256": "1a161f673fc0d790"
+    },
+    {
+      "path": "scripts/verify-emotion-e2e.mjs",
+      "bytes": 4037,
+      "sha256": "8bbf3514506c5849"
+    },
+    {
+      "path": "src/archive-store.mjs",
+      "bytes": 14234,
+      "sha256": "f998247e88e6e4ad"
+    },
+    {
+      "path": "src/covenant-store.mjs",
+      "bytes": 48949,
+      "sha256": "8e0672b359cfca8e"
+    },
+    {
+      "path": "src/covenant-inject.mjs",
+      "bytes": 14636,
+      "sha256": "923cb75e9dbd432f"
+    },
+    {
+      "path": "src/covenant-redact.mjs",
+      "bytes": 2127,
+      "sha256": "4413226d85df9559"
+    },
+    {
+      "path": "src/covenant-facts.mjs",
+      "bytes": 3866,
+      "sha256": "4d0d85e1a2ce94cc"
+    },
+    {
+      "path": "src/bridge-watchdog.mjs",
+      "bytes": 19076,
+      "sha256": "b770746362758c83"
+    },
+    {
+      "path": "watchdog.mjs",
+      "bytes": 13835,
+      "sha256": "cea04191f3ef2f10"
+    },
+    {
+      "path": "preview-covenant.mjs",
+      "bytes": 2464,
+      "sha256": "0f55ba98e50bf8ce"
+    },
+    {
+      "path": "src/intent-engine.mjs",
+      "bytes": 26950,
+      "sha256": "6b34b7b5b5826811"
+    },
+    {
+      "path": "scripts/preview-intent.mjs",
+      "bytes": 3032,
+      "sha256": "f6dfb14c4aa79309"
+    },
+    {
+      "path": "scripts/check-familiarity.mjs",
+      "bytes": 1283,
+      "sha256": "3f0a87a7347595f9"
+    },
+    {
+      "path": "scripts/check-idempotent.mjs",
+      "bytes": 1746,
+      "sha256": "8bc5416680a7f19e"
+    },
+    {
+      "path": "scripts/check-media.mjs",
+      "bytes": 1735,
+      "sha256": "98424a65caa3b4ae"
+    },
+    {
+      "path": "scripts/check-media-fail.mjs",
+      "bytes": 2320,
+      "sha256": "ea60d13580130f29"
+    },
+    {
+      "path": "scripts/check-intent-read.mjs",
+      "bytes": 2263,
+      "sha256": "a975ff23c1f7c0eb"
+    },
+    {
+      "path": "scripts/check-advance.mjs",
+      "bytes": 1795,
+      "sha256": "06c2d766e38e9233"
+    },
+    {
+      "path": "scripts/check-advance-branches.mjs",
+      "bytes": 2813,
+      "sha256": "c4dbccf518cb22d0"
+    },
+    {
+      "path": "scripts/check-covenant-privacy.mjs",
+      "bytes": 994,
+      "sha256": "0247d2c018304df7"
+    },
+    {
+      "path": "scripts/check-covenant-redact.mjs",
+      "bytes": 2023,
+      "sha256": "b423a841f3cfbb57"
+    },
+    {
+      "path": "scripts/check-covenant-bound.mjs",
+      "bytes": 1985,
+      "sha256": "38744f603a65c6ae"
+    },
+    {
+      "path": "scripts/bench-openloops.mjs",
+      "bytes": 1229,
+      "sha256": "160ebc0c58881fc3"
+    },
+    {
+      "path": "scripts/check-prompt-budget.mjs",
+      "bytes": 2357,
+      "sha256": "e8cfcfb87c70cff1"
+    },
+    {
+      "path": "scripts/check-covenant-compress2.mjs",
+      "bytes": 2448,
+      "sha256": "06b0ef0178d1c663"
+    },
+    {
+      "path": "scripts/check-covenant-compress.mjs",
+      "bytes": 2567,
+      "sha256": "f1506453d2242e94"
+    },
+    {
+      "path": "scripts/check-double-derive.mjs",
+      "bytes": 1748,
+      "sha256": "c2de99b44a9aad6e"
+    },
+    {
+      "path": "src/closure-engine.mjs",
+      "bytes": 27532,
+      "sha256": "617127348dd3fe15"
+    },
+    {
+      "path": "scripts/preview-closure.mjs",
+      "bytes": 1963,
+      "sha256": "02cae3509b546a93"
+    },
+    {
+      "path": "src/archive-backup.mjs",
+      "bytes": 2770,
+      "sha256": "3355432f39f0d06f"
+    },
+    {
+      "path": "src/mcp-snowluma-safe.js",
+      "bytes": 91190,
+      "sha256": "a045550393a11631"
+    },
+    {
+      "path": "src/bili-video.mjs",
+      "bytes": 30424,
+      "sha256": "44b971ce7b058d25"
+    },
+    {
+      "path": "src/bili-storyboard.mjs",
+      "bytes": 6610,
+      "sha256": "2542f06b3e7e2215"
+    },
+    {
+      "path": "src/bili-title.mjs",
+      "bytes": 4214,
+      "sha256": "646c3fa4254e4d3a"
+    },
+    {
+      "path": "src/bili-write-grant.mjs",
+      "bytes": 10447,
+      "sha256": "748223a03afb62d9"
+    },
+    {
+      "path": "scripts/archive.mjs",
+      "bytes": 2263,
+      "sha256": "4bd2b8330b248f5d"
+    },
+    {
+      "path": "scripts/fix-covenant-dupes.mjs",
+      "bytes": 4652,
+      "sha256": "48f0baf400a628de"
+    },
+    {
+      "path": "start.bat",
+      "bytes": 954,
+      "sha256": "992080906785a9aa"
+    },
+    {
+      "path": "start-qq-bot.bat",
+      "bytes": 2299,
+      "sha256": "52ce465c84d97750"
+    },
+    {
+      "path": "launch.mjs",
+      "bytes": 6422,
+      "sha256": "d75cd7a31fcc251c"
+    },
+    {
+      "path": "dsh/agent-presets/qq-chat-v2.patch.yml",
+      "bytes": 24981,
+      "sha256": "85c0aca4afd06019"
+    },
+    {
+      "path": "test-watchdog.mjs",
+      "bytes": 17981,
+      "sha256": "d010514150572122"
+    },
+    {
+      "path": "test-covenant.mjs",
+      "bytes": 30689,
+      "sha256": "70276a2f52ae34e6"
+    },
+    {
+      "path": "test-covenant-facts.mjs",
+      "bytes": 5097,
+      "sha256": "28bdef41c7e84a2b"
+    },
+    {
+      "path": "test-covenant-compress.mjs",
+      "bytes": 6066,
+      "sha256": "cd72569c9e2eda70"
+    },
+    {
+      "path": "test-bili-v2.mjs",
+      "bytes": 6452,
+      "sha256": "8fde1fa3ac45c98a"
+    },
+    {
+      "path": "test-grant.mjs",
+      "bytes": 5343,
+      "sha256": "89de3d3d58f26ca8"
+    },
+    {
+      "path": "test-intent.mjs",
+      "bytes": 19062,
+      "sha256": "c8cd7c968d57da00"
+    },
+    {
+      "path": "test-intent-integration.mjs",
+      "bytes": 9291,
+      "sha256": "5f2f6a38e1ddf199"
+    },
+    {
+      "path": "test-closure.mjs",
+      "bytes": 14112,
+      "sha256": "7700c1bb4e8a5da0"
+    },
+    {
+      "path": "test-closure-integration.mjs",
+      "bytes": 7360,
+      "sha256": "e3e2de833d382d70"
+    },
+    {
+      "path": "test-recall-params.mjs",
+      "bytes": 11811,
+      "sha256": "ce08ac5deb104d29"
+    },
+    {
+      "path": "test-memory-scheduler.mjs",
+      "bytes": 6450,
+      "sha256": "86f248bc48fef83f"
+    },
+    {
+      "path": "test-covenant-tier.mjs",
+      "bytes": 4963,
+      "sha256": "0762e56b1639ac47"
+    },
+    {
+      "path": "test-covenant-mark-order.mjs",
+      "bytes": 5894,
+      "sha256": "00ed4baf18556918"
+    },
+    {
+      "path": "test-decay-idempotent.mjs",
+      "bytes": 5192,
+      "sha256": "4e619afeaa2883f0"
+    },
+    {
+      "path": "LOCAL-NOTES.md",
+      "bytes": 116103,
+      "sha256": "231fca689675e07e"
+    },
+    {
+      "path": "HANDOFF-2026-10-30.md",
+      "bytes": 17442,
+      "sha256": "c8393307635b356e"
+    }
+  ]
+}
