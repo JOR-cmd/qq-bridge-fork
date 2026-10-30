@@ -2,6 +2,19 @@
 
 **English**: [README.en.md](README.en.md) | **中文**: [README.md](README.md)
 
+> ## ⚠️ 本仓库是 fork，不是上游
+
+> 本仓库基于 **[Derpyu520/qq-bridge](https://github.com/Derpyu520/qq-bridge)** 的
+> `v0.2.1-r1`（适配 DSH 0.2.1-rc.2）进行**本地化修改**，不是原项目，也不代表上游立场。
+>
+> **上游文档、安装步骤、安全承诺仍以上游仓库为准**（本仓库的 `README.md` / `RULES.md` 保留原文）。
+> 本仓库新增的改动集中在记忆系统、契阔、情绪层、目的引擎等模块，
+> 详见提交说明与 `LOCAL-NOTES.md`。
+>
+> 已按上游 MIT 许可保留 `LICENSE` 与版权声明。
+> 本仓库已做**脱敏处理**：不含真实 QQ 号、本机路径、人格卡与凭据。
+
+
 > 🗂️ 文档索引（全部文档一句话说明 + 是否仍然有效）见 **[docs/README.md](docs/README.md)**；仓库目录/脚本命名约定见 **[docs/FOLDER_MAP.md](docs/FOLDER_MAP.md)**。
 >
 > 🔒 QQ 会话的权限边界与安全承诺见 **[RULES.md](RULES.md)**。
