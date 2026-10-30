@@ -14,6 +14,14 @@
 > 已按上游 MIT 许可保留 `LICENSE` 与版权声明。
 > 本仓库已做**脱敏处理**：不含真实 QQ 号、本机路径、人格卡与凭据。
 
+> ### 关于 AI 辅助
+>
+> 本仓库的本地化修改在 **AI 辅助**下完成（DeepSeek Harness agent）。
+> 修改内容、判断与取舍由仓库所有者审定。
+>
+> 上游项目全部代码与文档的著作权归 **Derpyu520 及 qq-bridge / QSH 贡献者**，
+> 依其 `LICENSE`（MIT）授权使用。本仓库保留原版权声明，未作任何删除或替换。
+
 
 > 🗂️ 文档索引（全部文档一句话说明 + 是否仍然有效）见 **[docs/README.md](docs/README.md)**；仓库目录/脚本命名约定见 **[docs/FOLDER_MAP.md](docs/FOLDER_MAP.md)**。
 >
